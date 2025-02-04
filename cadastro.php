@@ -32,3 +32,4 @@ echo "Você foi cadastrado com sucesso.";
     <br/><a href="javascript:history.go(-1)" class="botao">Voltar</a>
 </div>
 </body>
+</html>

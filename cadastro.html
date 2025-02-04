@@ -6,23 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="titulo">
-        <div class="titulo1">Cadastro</div>
-    </header>
-    <div>
+    <nav>
+        <ul>
+            <li><a href="consulta.html">Buscar cadastro</a></li>
+        </ul>
+    </nav>
+    <div class="formulario">
+        <h1>Cadastro</h1>
         <form method="POST"  action="cadastro.php">
-            Nome: <input type="text" name="nome"></br>
+            Nome: <input type="text" class="nome" name="nome" placeholder="Digite seu nome aqui"></br>
             Ano de Nascimento <input type="date" name="idade"></br>
             <fieldset>
                 <legend>Sexo</legend> 
-            <input type="radio" name="sexo" id="masc" value="homem"/>
-            <label for="masc">Masculino</label></br>
-            <input type="radio" name="sexo" id="fem" value="mulher"/>
+            
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="masc" value="masculino"/>
             <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="fem" value="feminino"/>
             </fieldset></br>
             <label for="contato">Contato:</label>
             <input type="tel" id="contato" name="contato" placeholder="(99) 9 9999-9999" pattern="\(\d{2}) \d \d{4}-\d{4}" required>
-            <button type="submit" name="cadastrar" id="cadastrar">Cadastrar</button>
+            <button type="submit" name="cadastrar" class="botao" id="cadastrar">Cadastrar</button>
         </form>
     </div>
 </body>

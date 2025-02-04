@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--a consulta é feita pelo nome do usário que é chave primária -->
+<div class="consulta">
+        <h1>Consulta</h1>
+        <form method="POST" action="consulta.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+            <button type="submit" name="buscar" id="buscar">Buscar</button>
+        </form>
+            <br/><a href="javascript:history.go(-1)" id="botao" class="botao">Voltar</a>
+</div>
+</body>
+</html>

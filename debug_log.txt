@@ -1,0 +1,5 @@
+$data = json_decode(file_get_contents("php://input"), true);
+
+// Debug: Log dos dados recebidos
+file_put_contents("debug_log.txt", print_r($data, true), FILE_APPEND);
+
